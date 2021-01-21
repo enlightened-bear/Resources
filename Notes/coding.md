@@ -31,6 +31,13 @@
 | `git clean` | `git clean -f -d` | Removes any file/subdirectories that are not tracked. |
 | | `git clean -d -n`| Dry run - shows what files/subdirectories would be removed. |
 | | `git clean -x -i`| `-x` options even removes the files that match `.gitignore` patterns. `-i` is interactive flag. |
+| `git branch` | `git branch` | List of current branches. `-v` flag shows last commit on each branch. |
+| | `git branch testing` | Creates a new branch called `testing`. |
+| | `git branch -d testing` | Deletes the `testing` branch. Works only if the branch is fully merged work. |
+| | `git branch --move master main` | Renames the local `master` branch to `main`. |
+| `git checkout` | `git checkout testing` | Switches to the `testing` branch (`HEAD` points to `testing`). |
+| | `git checkout --tracking origin/serverfix` | Sets up a tracking branch `serverfix`.|
+
 
 ### Resources
 
